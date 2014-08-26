@@ -22,11 +22,11 @@ Here's an example of what a view could look like:(saved in a file named "route1.
 
 “State”(in this case), is all the active routes. Nested routes are possible with each view having it’s own “ui-view”(this framework’s version of Angular’s “ng-view”). They are linked to or accessed using ui-router's "ui-sref" as opposed to an "href". 
 
-<li><a ui-sref="route1">Route 1</a></li>
+a ui-sref="route1">Route 1 /a
 
 and
 
-<li class="active"><a ui-sref=".list"><p>Render Data</p></a></li>
+a ui-sref=".list" Render Data /a
 
 ui-router gives the developer high level control over an application’s UI. Also, the framework is not limited to routes but can manipulate other parts of the application as well through a controller.
 
