@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+	<title>Angular ui-router Demo</title>
+
+	<link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" ui-sref="index">Angular ui-router Demo</a>
+      <ul class="nav">
+        <li><a ui-sref="index">Home</a></li>
+        <li><a ui-sref="route1">Route 1</a></li>
+        <li><a ui-sref="route2">Route 2</a></li>
+        <li><a ui-sref="route3">Route 3</a></li>
+        <li><a ui-sref="route4">Route 4</a></li>
+        <li><a ui-sref="route5">Route 5</a></li>
+        <li><a ui-sref="route6">Route 6</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div ui-view></div>    
+
+  <!-- Angular -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.4/angular.min.js"></script>
+  <!-- UI-Router -->
+  <script src="//angular-ui.github.io/ui-router/release/angular-ui-router.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>
