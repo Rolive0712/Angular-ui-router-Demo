@@ -2,18 +2,20 @@ var myApp = angular.module('myApp', ["ui.router"])
 
     myApp.config(function($stateProvider, $urlRouterProvider){
 
+        $urlRouterProvider.otherwise("route1");
+
         $stateProvider
             .state('index', {
-                url: "",
-                views: {
-                    "viewA": {
-                        template: "index.viewA"
-                    },
-                    "viewB": {
-                        template: "index.viewB"
-                    }
-                }
+                url: "route1",
+                templateUrl: "routes/route1.html"
             })
+                .state('index.list', {
+                    url: "/list",
+                    templateUrl: "lists/route1.list.html",
+                    controller: function($scope) {
+                        $scope.things = ["A list of data specific to route1"];
+                    }
+                })
 
             .state('route1', {
                 url: "route1",
